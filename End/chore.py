@@ -18,4 +18,4 @@ class Chore:
     def CompleteChore(self) -> None:
         self.is_complete = True
         self.logger.Log(f"Completed {self.chore_name}")
-        self.message_sender.SendEmail(self.owner, f"The chore {self.chore_name} is complete.")
+        self.message_sender.SendMessage(self.owner, f"The chore {self.chore_name} is complete.")
