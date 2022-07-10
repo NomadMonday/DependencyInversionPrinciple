@@ -1,6 +1,6 @@
-from abc_person import ABCPerson
+from abc import ABC
 
-class Person(ABCPerson):
+class ABCPerson(ABC):
     def __init__(self):
         self.first_name: str = None
         self.last_name: str = None

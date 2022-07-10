@@ -1,14 +1,13 @@
-from chore import Chore
-from person import Person
+from factory import Factory
 
 def main():
-    owner = Person()
+    owner = Factory.CreatePerson()
     owner.first_name = "Tim"
     owner.last_name = "Corey"
     owner.email_address = "tim@iamtimcorey.com"
     owner.phone_number = "555-1212"
 
-    chore = Chore()
+    chore = Factory.CreateChore()
     chore.chore_name = "Take out the trash"
     chore.owner = owner
 
